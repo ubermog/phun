@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;900&display=swap" rel="stylesheet"> 
+    <title>Form</title>
+    <style>
+        body {
+            background-image: url(background/img8.jpg)
+            
+        }
+        input[type="text"], textarea {
+            width: 250px;
+            padding: 5px;
+           
+        }
+        
+        form {
+            
+            Background-color: rgba(0,0,0,0.3);
+            font-family: 'Roboto Slab', serif;
+            margin-left: 40%;
+            margin-right: 40%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 300px;
+            text-align: center;
+            z-index: 5;
+            position: relative;
+           
+        }
+        
+        textarea {
+            height: 200px
+        }
+        input:focus {
+            background-color: lightgrey;
+            text-align: center;
+        }
+        
+        textarea:focus {
+            background-color: lightgrey;
+            text-align: center;
+        }
+        
+        label {
+            display: inline-block;
+            color: mintcream;
+            width: 200px;
+             text-shadow: 1px 1px 5px #333;
+            
+        }
+        label[for="msg"] {
+            vertical-align: top;
+        }
+        
+/*
+         div#formtrans {
+            background-color: white;
+            border: inset;
+            width: 295px;
+            margin-left: 33%;
+            height: 600px;
+            opacity: 0.5;
+            z-index: 4;
+            position: absolute; 
+
+           
+        }
+        */
+        input[placeholder="Enter your first name"] {
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+        }
+        input[placeholder="Enter your last name"] {
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+        }
+        
+         textarea[placeholder="Tell your incredible story here..."] {
+            font-family: 'Roboto Slab', serif;
+            padding-top: 20px; 
+            text-align: center;
+        }
+        
+        input[type="submit"] {
+            font-family: 'Roboto Slab', serif;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            
+        }
+        
+        @media all and (max-width: 660px) {
+            form {
+                display: block;
+                margin-left: 0%;
+                width: 100%;
+            }
+            
+            label {
+                width: 100%;
+            }
+            
+            input[type="text"], textarea {
+            width: 90%;
+            padding: 5px;
+                padding-right: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+   <h1>Form</h1>
+   <!-- <div id="formtrans" ></div> -->
+   <form action="">
+       
+       <label>First Name:</label><br><br>
+       <input type="text" name="firstname" required placeholder="Enter your first name"><br><br><br>
+       
+       <label>Last Name:</label><br><br>
+       <input type="text" name="lastname" required placeholder="Enter your last name"><br><br><br>
+       
+       <label for="msg">Your Message:</label><br><br>
+       <textarea required name="message" id="msg" placeholder="Tell your incredible story here..."></textarea><br><br>
+       
+       <!-- Add 2 radio buttons (male, female) -->
+       
+       
+       <!-- Add a checkbox for a newsletter subscription -->
+       
+       
+       
+       <!-- Add a dropdown list with the select element (like a list of countries) -->
+       
+       
+       <!-- Add some more input fields with the types date, color, file, email and password (just for testing input types, no label is needed) -->
+       
+       
+       
+       <input type="submit" value="SEND">
+       
+       
+   </form>
+    
+</body>
+</html>
